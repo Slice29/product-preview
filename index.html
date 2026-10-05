@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Frontend Mentor | Challenge name</title>
+    <title>Frontend Mentor | Perfume Preview Card</title>
     <link
       rel="icon"
       type="image/png"
@@ -11,15 +11,63 @@
     />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&family=Fraunces:wght@700"
+      rel="stylesheet"
+    />
 
     <link rel="stylesheet" href="./dist/output.css" />
   </head>
-  <body>
-    <main></main>
-    <footer class="text-center text-xs">
+  <body class="bg-cream">
+    <main
+      class="flex min-h-screen items-start justify-center md:flex-row md:items-center"
+    >
+      <div
+        class="mx-auto mt-10 flex w-11/12 flex-col rounded-lg bg-white pb-6 md:w-3xl md:flex-row md:pb-0"
+      >
+        <div class="md:w-1/2">
+          <img
+            class="block rounded-xl md:hidden"
+            src="./assets/images/image-product-mobile.jpg"
+            alt="Gabrielle Chanel Eau de Parfum Bottle"
+          />
+          <img
+            class="hidden rounded-xl md:block"
+            src="./assets/images/image-product-desktop.jpg"
+            alt="Gabrielle Chanel Eau de Parfum"
+          />
+        </div>
+        <div class="px-4 md:w-1/2">
+          <p class="mt-5 text-xs tracking-[0.2rem] text-grey md:pt-6">
+            PERFUME
+          </p>
+          <h1 class="mt-5 font-serif text-4xl md:w-3/4 md:pb-8 md:text-left">
+            Gabrielle Essence Eau de Parfum
+          </h1>
+
+          <p class="mt-5 text-left text-grey md:w-3/4 md:pb-6">
+            A floral, solar and voluptuous interpretation composed by Oliver
+            Polge, Perfumer-Creator for the House of CHANEL.
+          </p>
+          <div class="mt-5 flex items-center gap-4 md:pb-8">
+            <span class="font-serif text-4xl text-green-500">$149.99</span>
+            <span class="text-xs text-grey line-through">$169.99</span>
+          </div>
+
+          <button
+            href="#"
+            class="text-semibold mt-4 flex w-full items-center justify-center gap-4 rounded-lg bg-green-500 py-3 text-white"
+          >
+            <img src="./assets/images/icon-cart.svg" />
+            <span>Add to cart</span>
+          </button>
+        </div>
+      </div>
+    </main>
+    <footer class="text-center">
       Challenge by
       <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>.
-      Coded by <a href="#">Your Name</a>.
+      Coded by <a href="#">Slice29</a>.
     </footer>
   </body>
 </html>
